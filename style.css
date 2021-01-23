@@ -137,6 +137,12 @@ textarea {
   }
 }
 
+/*pass*/
+.pass {
+  text-align: center;
+  margin-top: 15%;
+}
+
 /*footer*/
 footer {
   margin: 2em auto;
