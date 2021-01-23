@@ -2,37 +2,25 @@
 <head>
   <title>Te amo!</title>
   <LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
+    <script LANGUAGE="JavaScript">
+      function Entrar(password) {
+        console.log('password: ',password)
+        if(password == "dageis")
+          window.location="main.html"
+        }
+      </script>
 </head>
 
 <body>
-  <div class = "wrap">
-    <h1>Feliz 2 mesaniversario!!</h1>
-    <br/><br/><br/><br/>
-    <div class = "postcard">
 
-      <div class = "letter">
-        <form action="#" method="post" class="message_form">
-          <p class = "push">Querida </p><input type = "text" id = "recipient" name = "recipient_name" placeholder = "Suggeis Patricia" class = "push"><br>
-          <label for = "message">Mensaje</label><br>
-          <textarea id = "message" name = "message_to_recipient" placeholder = "Te amo desde antes de darme cuenta... Te amo y sigo sin darme cuenta lo mucho que es... Si la vida es un corto paseo, deseo caminar siempre a tu lado..."></textarea><br>
-          <p>Tu enamorado, </p><br>
-          <input type = "text" id = "sender_name" name = "sender" placeholder = "Jose Daniel">
-        </form>
-      </div>
-
-      <div class = "address">
-        <img src = "http://i44.photobucket.com/albums/f9/dandee114/stamp_zpsvbuxiwih.png" class = "mail_stamp">
-        <form action="#" method="post" class="message_form">
-        <input type = "email" id = "recipient_email" name = "recipient_email" placeholder = "El amor es solo el comienzo...">
-        </form>
-        <a href="tooSoom.html">Seguir leyendo...</a>
-      </div>
-
-      
-      
-    </div>
+  <div class = "wrap pass">
+    <form>
+      <p>
+        <input type="password" placeholder="introduce el password" name="palabra" size="25"> <input type="button" value="entrar"
+      onClick="Entrar(this.form.palabra.value)" name="button"> </p>
+      </form>
   </div>
-  
+
   <footer>
     <p>Siempre en mi mente y corazon...</p>
   </footer>
