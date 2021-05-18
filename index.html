@@ -2,30 +2,50 @@
 <head>
   <title>Te amo!</title>
   <LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">    
     <script LANGUAGE="JavaScript">
       function Entrar(password) {
-        console.log('password: ',password)
-        if(password == "daggeis"){
-          window.location="main.html"
+        if(password === "infinitamentetu"){   
+          swal({
+              title: "Lo haz conseguido!!",
+              text: "En hora buena Amor mio!",
+              type: "success",
+              showCancelButton: true,
+              confirmButtonColor: '#DD6B55',
+              confirmButtonText: 'Yes, llevame contigo soy tuya!',
+              cancelButtonText: "me voy"
+          }).then(
+              function () { window.location="main2.html" },
+              function () { return false; });
           }else{
-            alert('Sigue intentando mi gochis!!! i lov u!!!')
+            swal({
+              title: "UPS!",
+              text: "Sigue intentando mi gochis... TE AMO!",
+              icon: "error",
+              button: "Intentarlo nuevamente pero primero te doy un beso"
+            });
           }
         }
       </script>
 </head>
 
 <body>
-
-  <div class = "wrap pass">
+    <div class="title red">
+      <h1>TE AMO!!!</h1>     
+    </div>
+  <div class = "1wrap pass">
     <form>
-      <p>
-        <input type="password" placeholder="introduce el password" name="palabra" size="25"> <input type="button" value="entrar"
-      onClick="Entrar(this.form.palabra.value)" name="button"> </p>
+      
+        <input type="password" placeholder="El password preciosa" name="palabra" size="25"> 
+        <input class="btn" type="button" value="Entrar"
+      onClick="Entrar(this.form.palabra.value)" name="button"> 
       </form>
   </div>
 
   <footer>
-    <p>Siempre en mi mente y corazon...</p>
+    <p class="red">Siempre en mi mente y corazon...</p>
   </footer>
   
 </body>
