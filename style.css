@@ -5,6 +5,13 @@
 body {
   font-family: "Varela Round", "Quicksand", sans-serif;
   background-color: #800020;
+  background-image: url("sj-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: drop-shadow(2px 4px 6px rgb(218, 70, 168));
+  /*backdrop-filter: blur(5px);
+  backdrop-filter: brightness(0.5); */
+  backdrop-filter: contrast(0.4);
 }
 
 .postcard {
@@ -155,3 +162,41 @@ footer p {
   font-size: 1em;
   letter-spacing: 1px;
 }
+
+/********************************************************/
+.title h1 {
+  font-size: 12.5rem;
+  color: #882b2b !important;
+}
+
+.red {
+  color: #882b2b !important;
+}
+
+footer p {
+  font-size: 3em;
+}
+
+.pass .btn {
+  background: #882b2b !important;
+  color: #f7f7f7;
+}
+
+.newLetter {
+  padding: 10%;
+  width: fit-content;
+  background: #000000 !important;
+  color: #f7f7f7;
+  text-align: -webkit-center;
+}
+
+.contentLetter {
+  width: 75%;
+  text-align: center;
+}
+
+.hint {
+  color: #daa34a;
+}
+
+/******************** cat ***********************/
